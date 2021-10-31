@@ -1,0 +1,17 @@
+{
+    "name": "leandro47/converter-response",
+    "description": "Converter JSON para XML ou vice versa",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "leandro47",
+            "email": "leandrosilva47@live.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Leandro47\\ConverterResponse\\": "src/"
+        }
+    }
+}
