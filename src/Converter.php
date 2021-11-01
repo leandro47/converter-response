@@ -16,22 +16,22 @@ class Converter
         $this->decoded = null;
         $this->encoded = null;
     }
-    
+
     public function from(TypeInterface $typeInterface): self
     {
         $this->decoded = $typeInterface->decode($this->content);
-        
+
         return $this;
     }
-    
+
     public function to(TypeInterface $typeInterface): self
     {
         $this->encoded = $typeInterface->encode($this->decoded);
-        
+
         return $this;
     }
-    
-    public function get(): string
+
+    public function get(): ? string
     {
         return $this->encoded;
     }
