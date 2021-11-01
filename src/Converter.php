@@ -31,7 +31,7 @@ class Converter
         return $this;
     }
 
-    public function get(): ? string
+    public function get(): ?string
     {
         return $this->encoded;
     }
