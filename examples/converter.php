@@ -7,9 +7,9 @@ use Leandro47\ConverterResponse\Format\Xml;
 require_once './vendor/autoload.php';
 
 $json = file_get_contents('https://economia.awesomeapi.com.br/json/last/USD-BRL');
-$xml = file_get_contents('https://economia.awesomeapi.com.br/xml/last/USD-BRL');
+$xml = file_get_contents('https://economida.awesomeapi.com.br/xml/last/USD-BRL');
 
-$converter =  new Converter($json);
-$object = $converter->from(new Json)->to(new Xml)->get();
+$converter =  new Converter($xml);
+$object = $converter->from(new Xml)->to(new Json)->get();
 
 echo $object;
