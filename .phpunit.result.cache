@@ -1,1 +1,1 @@
-{"version":1,"defects":{"TestConverter::testDecodeXml":4},"times":{"TestConverter::testDecodeXml":0.216,"ConverterTest::testDecodeXml":0.187}}
+{"version":1,"defects":{"TestConverter::testDecodeXml":4,"ConverterTest::testDecodeXml":3,"ConverterTest::testConverterXmlToJson":5},"times":{"TestConverter::testDecodeXml":0.216,"ConverterTest::testDecodeXml":66.59,"ConverterTest::testInstanceClassDecodeFromXml":4.856,"ConverterTest::testConverterXmlToJson":0}}
