@@ -1,3 +1,5 @@
 Converter
  [x] Instance class decode from xml
+ [x] Should convert xml to json
+ [x] Should convert json to xml
 
