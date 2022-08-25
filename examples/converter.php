@@ -6,10 +6,27 @@ use Leandro47\ConverterResponse\Format\Xml;
 
 require_once './vendor/autoload.php';
 
-$json = file_get_contents('https://economia.awesomeapi.com.br/json/last/USD-BRL');
-$xml = file_get_contents('https://economida.awesomeapi.com.br/xml/last/USD-BRL');
+$json = "
+{
+    'value': 'value1',
+    'value2': 'value2',
+    'value3': {
+        'subvalue': 'subvalue'
+    }
+}";
 
-$converter =  new Converter($xml);
-$object = $converter->from(new Xml)->to(new Json)->get();
+$xml = "
+<?xml version='1.0' encoding='UTF-8' ?>
+<root>
+  <value>value1</value>
+  <value2>value2</value2>
+  <value3>
+    <subvalue>subvalue</subvalue>
+  </value3>
+</root>
+";
+
+$converter =  new Converter($json);
+$object = $converter->from(new Json)->to(new Json)->get();
 
 echo $object;
